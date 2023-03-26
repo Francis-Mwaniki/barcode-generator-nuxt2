@@ -10,8 +10,15 @@
         class="bg-white rounded-md py-3 px-4 border inline-block mb-3 md:mb-4"
         @click="generateRandomNumber"
       >
-        Generate number: <span class="bg-red-200 rounded-md py-2 px-3">{{ number }}</span>
+        Generator
       </button>
+      <div>
+        Generate number:
+        <span
+          class="bg-red-200 rounded-md py-2 px-3 flex justify-center mx-auto items-center"
+          >{{ number }}</span
+        >
+      </div>
       <VueBarcode
         ref="barcode"
         :value="number"
