@@ -2,6 +2,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
 //turn loading to false
   loading: false,
+  ssr:false,
   head: {
     title: 'nuxt2',
     htmlAttrs: {
@@ -31,7 +32,7 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [   'nuxt-leaflet','@nuxtjs/tailwindcss'
+  modules: ['@nuxtjs/tailwindcss'
 ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
